@@ -18,7 +18,13 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Paths*/
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"] //Se fizermos qualquer import que comece com @ vai importar da pasta src
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
